@@ -1,4 +1,4 @@
-package com.example.navigationdrawertemplate;
+package com.example.KvikMaler2;
 
 import org.junit.Test;
 

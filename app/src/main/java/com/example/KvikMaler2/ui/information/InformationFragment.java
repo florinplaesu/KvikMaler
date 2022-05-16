@@ -1,4 +1,4 @@
-package com.example.navigationdrawertemplate.ui.information;
+package com.example.KvikMaler2.ui.information;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,8 +10,7 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.navigationdrawertemplate.databinding.FragmentInformationBinding;
-import com.example.navigationdrawertemplate.databinding.FragmentInformationBinding;
+import com.example.KvikMaler2.databinding.FragmentInformationBinding;
 //import com.example.navigationdrawertemplate.databinding.FragmentServicesBinding;
 
 public class InformationFragment extends Fragment {

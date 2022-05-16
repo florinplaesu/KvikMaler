@@ -1,4 +1,4 @@
-package com.example.navigationdrawertemplate;
+package com.example.KvikMaler2;
 
 import android.content.Context;
 
@@ -21,6 +21,6 @@ public class ExampleInstrumentedTest {
     public void useAppContext() {
         // Context of the app under test.
         Context appContext = InstrumentationRegistry.getInstrumentation().getTargetContext();
-        assertEquals("com.example.navigationdrawertemplate", appContext.getPackageName());
+        assertEquals("com.example.KvikMaler2", appContext.getPackageName());
     }
 }

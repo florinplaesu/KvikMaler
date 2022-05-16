@@ -1,4 +1,4 @@
-package com.example.navigationdrawertemplate.ui.services;
+package com.example.KvikMaler2.ui.price;
 
 import android.os.Bundle;
 import android.view.LayoutInflater;
@@ -10,22 +10,22 @@ import androidx.annotation.NonNull;
 import androidx.fragment.app.Fragment;
 import androidx.lifecycle.ViewModelProvider;
 
-import com.example.navigationdrawertemplate.databinding.FragmentServicesBinding;
+import com.example.KvikMaler2.databinding.FragmentPricesBinding;
 
-public class ServicesFragment extends Fragment {
+public class PriceFragment extends Fragment {
 
-    private FragmentServicesBinding binding;
+    private FragmentPricesBinding binding;
 
     public View onCreateView(@NonNull LayoutInflater inflater,
                              ViewGroup container, Bundle savedInstanceState) {
-        ServicesViewModel servicesViewModel =
-                new ViewModelProvider(this).get(ServicesViewModel.class);
+        PriceViewModel priceViewModel =
+                new ViewModelProvider(this).get(PriceViewModel.class);
 
-        binding = FragmentServicesBinding.inflate(inflater, container, false);
+        binding = FragmentPricesBinding.inflate(inflater, container, false);
         View root = binding.getRoot();
 
-        final TextView textView = binding.textServices;
-        servicesViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
+        final TextView textView = binding.textPrices;
+        priceViewModel.getText().observe(getViewLifecycleOwner(), textView::setText);
         return root;
     }
 

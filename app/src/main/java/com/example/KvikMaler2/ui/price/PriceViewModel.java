@@ -1,4 +1,4 @@
-package com.example.navigationdrawertemplate.ui.price;
+package com.example.KvikMaler2.ui.price;
 
 import androidx.lifecycle.LiveData;
 import androidx.lifecycle.MutableLiveData;
