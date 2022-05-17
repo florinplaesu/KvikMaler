@@ -15,3 +15,6 @@
 - [ ] 7. As an administrator I want to receive notification when a customer places an order so that I can verify it.
 - [ ] 8. As an administrator I want to send notification when the order is finished.
 - [ ] 9. As a customer I want to receive notification when my order is accepted or finished so that I know the progress of it.
+
+I believe I was a "bit" overconfident in my capabilities of implementing this project on my own. At this moment, barelly requirement no. 4 is implemented (and that is my opinion). 
+
