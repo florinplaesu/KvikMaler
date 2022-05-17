@@ -9,7 +9,7 @@
 - [ ] 1. As an administrator I want to edit information about the company so that my customers know who could work for them.
 - [ ] 2. As an administrator I want to be able to edit the services I provide so that my customers know what the company is capable of.
 - [ ] 3. As an administrator I want to be able to edit the price for each service so that I can addapt to the market.
-- [ ] 4. As a customer I want to see the services the company offers so that I can compare them to others.
+- [X] 4. As a customer I want to see the services the company offers so that I can compare them to others.
 - [ ] 5. As a customer I want to be able to calculate the price for specific service so I can see how much does it cost.
 - [ ] 6. As a customer I want to order online the services the company provides so that I don't have to visit their offices.
 - [ ] 7. As an administrator I want to receive notification when a customer places an order so that I can verify it.
