@@ -18,3 +18,4 @@
 
 I believe I was a "bit" overconfident in my capabilities of implementing this project on my own. At this moment, barelly requirement no. 4 is implemented (and that is my opinion). 
 
+https://www.youtube.com/watch?v=oqu_RZ1PPD0
