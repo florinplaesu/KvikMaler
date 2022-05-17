@@ -8,16 +8,19 @@ import androidx.recyclerview.widget.RecyclerView;
 
 public class ServicesViewModel extends ViewModel {
 
-    private final MutableLiveData<String> mText;
+    //private final MutableLiveData<String> mText;
     private final MutableLiveData<RecyclerView> mRecycle;
 
     public ServicesViewModel() {
-        mText = new MutableLiveData<>();
-        mText.setValue("This is gallery fragment");
+        //mText = new MutableLiveData<>();
+        //mText.setValue("This is gallery fragment");
         mRecycle= new MutableLiveData<>();
     }
 
-    public LiveData<String> getText() {
-        return mText;
+    //public LiveData<String> getText() {
+    //    return mText;
+    //}
+    public LiveData<RecyclerView> getRecycle() {
+        return mRecycle;
     }
 }

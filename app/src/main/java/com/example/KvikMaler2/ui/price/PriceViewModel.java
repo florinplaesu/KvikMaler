@@ -10,7 +10,7 @@ public class PriceViewModel extends ViewModel {
 
     public PriceViewModel() {
         mText = new MutableLiveData<>();
-        mText.setValue("This is slideshow fragment");
+        mText.setValue("Under Construction :( ");
     }
 
     public LiveData<String> getText() {

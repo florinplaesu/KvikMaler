@@ -17,8 +17,12 @@ public class ServicesAdapter  extends RecyclerView.Adapter<ServicesAdapter.ViewH
 
     private ArrayList<Services> services;
     private OnClickListener onClickListener;
+    OnlistItemClickListener listener;
 
-    public ServicesAdapter(ArrayList<Services> services) { this.services=services;}
+    public ServicesAdapter(ArrayList<Services> services, OnlistItemClickListener listener) {
+        this.services=services;
+        this.listener=listener;
+    }
 
     @NonNull
     @Override
@@ -40,6 +44,10 @@ public class ServicesAdapter  extends RecyclerView.Adapter<ServicesAdapter.ViewH
 
     public void setOnClickListener(OnClickListener listener) { this.onClickListener=listener;}
 
+    public interface OnlistItemClickListener {
+        void onClick(int position);
+    }
+
     class ViewHolder extends RecyclerView.ViewHolder {
 
         TextView name;
@@ -49,12 +57,19 @@ public class ServicesAdapter  extends RecyclerView.Adapter<ServicesAdapter.ViewH
             super(itemView);
             name= itemView.findViewById(R.id.textview_name);
             icon= itemView.findViewById(R.id.imageview_icon);
-            itemView.setOnClickListener(v -> {
-                onClickListener.onClick(services.get(getBindingAdapterPosition()));
+            itemView.setOnClickListener(new View.OnClickListener() {
+                @Override
+                public void onClick(View view) {
+                    listener.onClick(getAdapterPosition());
+                }
             });
+                    //setOnClickListener(v -> {
+                //onClickListener.onClick(services.get(getBindingAdapterPosition()));
+            //});
         }
     }
     public interface OnClickListener {
         void onClick(Services services);
     }
+
 }
